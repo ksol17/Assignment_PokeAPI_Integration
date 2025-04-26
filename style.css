@@ -1,0 +1,95 @@
+/* Existing styles... */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #80b7f3;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e972a4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #888df6;
+}
+
+#pokemon-container {
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+    /* 👈 ADD THIS! */
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Loader styles (if you have a loading animation) */
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #FF4500;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 🎉 NEW: Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
